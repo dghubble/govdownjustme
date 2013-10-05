@@ -152,7 +152,7 @@ var country_to_adjectival = {
   "Somalia": "Somali",
   "South Africa": "South African",
   "Spain": "Spanish",
-  "Sri Lanka": "Sri Lanka",
+  "Sri Lanka": "Sri Lankan",
   "St. Kitts and Nevis": "St. Kitts and Nevis",
   "St. Lucia": "St. Lucian",
   "St. Vincent and the Grenadines": "Vincentian",
