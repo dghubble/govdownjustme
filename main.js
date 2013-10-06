@@ -5,7 +5,8 @@ $(document).ready(function() {
       "Try disconnecting power from your government and giving it to the people.",
       "Your government may require a reboot and clean install.",
       "Did you try turning your government off and back on again?",
-      "Your government may have been corrupted during recent operations. Please replace it."
+      "Your government may have been corrupted during recent operations. Please replace it.",
+      "If your government hasn't been passing bills lately, it may be in deadlock."
     ];
     var tip = tips[Math.floor(Math.random()*tips.length)];
     return tip;
