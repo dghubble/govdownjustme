@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
   }
 
-  $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
+  $.getJSON('http://api.wipmania.com/json', function (data) {
     var down = ["United States", "Syrian Arab Republic"]
     var country = data.address.country
     
