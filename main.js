@@ -29,7 +29,8 @@ $(document).ready(function() {
   }
 
   $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
-    var down = ["United States", "Syrian Arab Republic"]
+    /* http://politix.topix.com/item/u584-even-in-the-middle-of-civil-war-syrian-government-continues-to-pay-bills-workers-wages-bbc */
+    var down = ["United States"] 
     var country = data.address.country
     
     if (country in as_object(down)) {
