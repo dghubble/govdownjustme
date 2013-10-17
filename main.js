@@ -7,7 +7,7 @@ $(document).ready(function() {
       "Did you try turning your government off and back on again?",
       "Your government may have been corrupted during recent operations. Please replace it.",
       "If your government hasn't been passing bills lately, it may be in deadlock.",
-      "Odds are it's either a denial of service attack or a random and senseless act of system administration."
+      "Your government may be experiencing a random and senseless act of system administration."
     ];
     var tip = tips[Math.floor(Math.random()*tips.length)];
     return tip;
@@ -17,7 +17,7 @@ $(document).ready(function() {
     var o = {};
     array.forEach(function(key) {
       o[key] = "";
-    })
+    });
     return o;
   };
 
@@ -25,13 +25,13 @@ $(document).ready(function() {
     if (country in country_to_adjectival) {
       return country_to_adjectival[country];
     } else {
-      return false
+      return false;
     }
   }
 
   $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
-    var down = ["United States"]
-    var country = data.address.country
+    var down = [];
+    var country = data.address.country;
     
     if (country in as_object(down)) {
       // User government is down.
