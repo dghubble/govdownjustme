@@ -30,7 +30,7 @@ $(document).ready(function() {
   }
 
   $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
-    var down = [];
+    var down = ['Latvia'];
     var country = data.address.country;
     
     if (country in as_object(down)) {
